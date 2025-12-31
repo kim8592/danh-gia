@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Hệ thống Đánh giá TH Khánh Bình v2.1",
+  "description": "Ứng dụng hỗ trợ giáo viên tiểu học đánh giá học sinh định kỳ, tích hợp trí tuệ nhân tạo Gemini để tự động hóa nhận xét và đưa ra tư vấn sư phạm.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
