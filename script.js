@@ -1367,7 +1367,7 @@ style={{padding:"8px 12px",cursor:"pointer",color:"red"}}
   <button onClick={() => setStatusModalStudent(stu)} className="flex flex-col items-start w-full text-left group/name relative">
     {/* ✅ TOOLTIP */}
     <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-slate-900 text-white text-[11px] rounded-lg whitespace-nowrap z-50 opacity-0 group-hover/name:opacity-100 transition-opacity pointer-events-none font-bold shadow-lg">
-      Thời gian nhận xét: {d.lastModified ? new Date(d.lastModified).toLocaleDateString('vi-VN') : 'Chưa nhận xét'}
+      Thời gian nhận xét: {d.lastModified ? new Date(d.lastModified).toLocaleDateString('vi-VN') : 'No Date'}
       <div className="absolute top-full left-3 w-2 h-2 bg-slate-900 transform rotate-45"></div>
     </div>
     
