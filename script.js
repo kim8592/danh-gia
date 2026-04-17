@@ -734,7 +734,7 @@ const filterComments = (text) => {
   return filtered;
 };
   // ✅ BƯỚC 1: Sửa BATCH_SIZE từ allTargets.length thành 5
-  const BATCH_SIZE = 10;
+  const BATCH_SIZE = 20;
   let successCount = 0;
   let failedStudents = []; // ✅ Lưu học sinh bị lỗi
   const delay = (ms) => new Promise(res => setTimeout(res, ms));
