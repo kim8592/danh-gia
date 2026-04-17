@@ -1760,7 +1760,7 @@ style={{padding:"8px 12px",cursor:"pointer",color:"red"}}
                       <div className="p-3 bg-emerald-100 text-emerald-600 rounded-2xl text-2xl">🔑</div>
                       <h3 className="text-xl font-black uppercase text-slate-800">VUI LÒNG NHẬP API KEY</h3>
                     </div>
-                    <p className="text-sm text-slate-600 mb-4">Lấy API Key: <a href="https://aistudio.google.com/" target="_blank" className="text-blue-600 underline">Vui long nháy vào đây</a></p>
+                    <p className="text-sm text-slate-600 mb-4">Lấy API Key: <a href="https://aistudio.google.com/" target="_blank" className="text-blue-600 underline">Vui lòng nháy vào đây</a></p>
                     <input type="password" className="w-full p-4 bg-slate-50 border-2 border-slate-300 rounded-xl mb-6 font-mono text-sm outline-none" placeholder="Nhập API Key..." value={apiKey} onChange={e => setApiKey(e.target.value)} />
                     <div className="flex gap-4">
                       <button onClick={() => setShowApiKeyModal(false)} className="flex-1 py-4 font-black text-slate-400 uppercase text-[10px]">Đóng</button>
