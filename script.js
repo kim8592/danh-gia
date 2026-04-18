@@ -724,7 +724,7 @@ const App = () => {
         'Em biểu hiện tài năng trong {keyword}, luôn hoàn thành tốt.',
         'Em làm chủ {keyword}, tỏ ra rất giỏi giang.',
         'Em phát huy tốt {keyword}, có kết quả vô cùng ấn tượng.',
-        'Em thực hiện {keyword} với độ chính xác cao, rất xứng đáy được biểu dương.',
+        'Em thực hiện {keyword} với độ chính xác cao, rất xứng đáng được biểu dương.',
         'Em tiếp cận {keyword} một cách sáng tạo và linh hoạt.',
         'Em nỗ lực với {keyword} và đã đạt được thành tựu đáng kể.',
         'Em có thế mạnh rõ rệt ở {keyword}.',
