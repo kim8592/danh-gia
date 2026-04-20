@@ -80,14 +80,14 @@ const normalizeMonthNameToNumber = (name) => {
 const filterComments = (text) => {
   if (!text) return text;
   const replacements = [
-    [/(?:cô|thầy|giáo\s+viên)\s+(?:muốn|yêu cầu|mong|hy vọng)\s+em/gi, 'Em hãy'],
-    [/(?:cô|thầy|giáo\s+viên)\s+khuyến khích\s+em/gi, 'Em hãy'],
-    [/(?:cô|thầy|giáo\s+viên)\s+tin\s+(?:rằng\s+)?em/gi, 'Em có khả năng'],
-    [/(?:cô|thầy|giáo\s+viên)\s+(?:nói|bảo)\s+em/gi, 'Em'],
-    [/(?:cô|thầy|giáo\s+viên)\s+hy vọng\s+em/gi, 'Em hãy'],
-    [/(?:cô|thầy|giáo\s+viên)\s+nhận\s+xét/gi, ''],
-    [/(?:cô|thầy|giáo\s+viên)\s+khen/gi, ''],
-    [/,\s*(?:cô|thầy|giáo\s+viên)(?:\s+[^!.?]*)?(?=[!.?])/gi, ''],
+    [/(?:co|thầy|giáo\s+viên)\s+(?:muốn|yêu cầu|mong|hy vọng)\s+em/gi, 'Em hãy'],
+    [/(?:co|thầy|giáo\s+viên)\s+khuyến khích\s+em/gi, 'Em hãy'],
+    [/(?:co|thầy|giáo\s+viên)\s+tin\s+(?:rằng\s+)?em/gi, 'Em có khả năng'],
+    [/(?:co|thầy|giáo\s+viên)\s+(?:nói|bảo)\s+em/gi, 'Em'],
+    [/(?:co|thầy|giáo\s+viên)\s+hy vọng\s+em/gi, 'Em hãy'],
+    [/(?:co|thầy|giáo\s+viên)\s+nhận\s+xét/gi, ''],
+    [/(?:co|thầy|giáo\s+viên)\s+khen/gi, ''],
+    [/,\s*(?:co|thầy|giáo\s+viên)(?:\s+[^!.?]*)?(?=[!.?])/gi, ''],
   ];
 
   let filtered = text;
@@ -95,8 +95,8 @@ const filterComments = (text) => {
     filtered = filtered.replace(pattern, replacement);
   });
 
-  return filtered.replace(/\bcô\b/g, '').replace(/\bthầy\b/g, '').replace(/\bgiáo\s+viên\b/gi, '')
-    .replace(/\bcô\s+giáo\b/gi, '').replace(/\bthầy\s+giáo\b/gi, '').replace(/\s+/g, ' ').trim()
+  return filtered.replace(/\bco\b/g, '').replace(/\bthầy\b/g, '').replace(/\bgiáo\s+viên\b/gi, '')
+    .replace(/\bco\s+giáo\b/gi, '').replace(/\bthầy\s+giáo\b/gi, '').replace(/\s+/g, ' ').trim()
     .replace(/^[,\s]+/, '');
 };
 
