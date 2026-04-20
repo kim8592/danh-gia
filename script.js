@@ -1239,7 +1239,7 @@ IMPORTANT:
               </div>
             </div>
           </div>
-        ) : <div className="py-32 text-center bg-white rounded-3xl border-4 border-dashed border-slate-300 font-black text-slate-300 uppercase tracking-[0.2em] text-xl">Chọn đủ dữ liệu để bắt đầu</div>}
+        ) : <div className="py-32 text-center bg-white rounded-3xl border-4 border-dashed border-slate-300 font-black text-slate-300 uppercase tracking-[0.2em] text-xl">Chọn đủ dữ liệu Lơp/ môn/ NL/ PCđể bắt đầu</div>}
       </main>
 
       {/* FOOTER */}
