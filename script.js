@@ -1328,10 +1328,9 @@ IMPORTANT:
         <input autoFocus className="w-full p-4 bg-slate-50 border-2 border-slate-300 rounded-xl font-bold mb-6 outline-none" value={inputValue} onChange={e => setInputValue(e.target.value)}/>
       }
       <div className="flex gap-4">
-        <button onClick={() => setModalType(null)} disabled={isSaving} className="flex-1 py-4 font-black text-slate-400 uppercase text-[10px] disabled:opacity-50">Đóng</button>
-        {!isSaving && <button onClick={async () => {
+        <button onClick={() => setModalType(null)} className="flex-1 py-4 font-black text-slate-400 uppercase text-[10px]">Đóng</button>
+        <button onClick={async () => {
           try {
-            setIsSaving(true);
             if (modalType === 'student') {
               const names = bulkInput.split('\n').map(n => n.trim()).filter(n => n !== '');
               const col = db.collection('artifacts').doc(appId).collection('public').doc('data').collection('years').doc(selectedYearId)
@@ -1356,11 +1355,8 @@ IMPORTANT:
             setModalType(null);
           } catch (e) {
             showToast('Lỗi: ' + e.message, 'error', '❌', 4000);
-          } finally {
-            setIsSaving(false);
           }
-        }} className="flex-[2] py-4 bg-indigo-600 text-white font-black rounded-xl uppercase text-[10px]">Lưu</button>}
-        {isSaving && <div className="flex-[2] py-4 bg-slate-400 text-white font-black rounded-xl uppercase text-[10px] flex items-center justify-center">⏳ Đang lưu...</div>}
+        }} className="flex-[2] py-4 bg-indigo-600 text-white font-black rounded-xl uppercase text-[10px]">Lưu</button>
       </div>
     </div>
   </div>
