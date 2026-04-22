@@ -2,7 +2,7 @@
   "short_name": "DGTH",
   "icons": [
     {
-      "src": "logo1.png",
+      "src": "logo.png",
       "sizes": "511x511", 
       "type": "image/png"
     },
